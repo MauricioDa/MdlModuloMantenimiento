@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <th:block th:include="layout/headGlobal :: head"/>
+    <th:block th:include="layout/headDataTables :: head"/>
+    <title>Gestores</title>
+</head>
+<body>
+<div class="container_48">
+    <div class="contenedor">
+        <div class="contenedor-form">
+            <div class="titulo centrar-objeto btn-inline-set">
+                <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only"
+                        onclick="parent.regresarMenuFrecuente();" type="submit" role="button" aria-disabled="false">
+                    <span class="ui-button-icon-left ui-icon ui-c ui-icon-arrow-1-w"></span>
+                    <span class="ui-button-text ui-c">ui-button</span></button>
+                <div>
+                    <h2 class="gris-b">Gestores</h2>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-campos">
+            <div class="col-md-12">
+                <table id="tablaEjemplo" class="table table-responsive table-bordered width-100 ">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Extn.</th>
+                        <th>Start date</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <select class="selectpicker" id="selectTest" data-show-subtext="true" data-live-search="true">
+                        <option data-subtext="Rep California">Tom Foolery</option>
+                        <option data-subtext="Sen California">Bill Gordon</option>
+                        <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+                        <option data-subtext="Rep Alabama">Mario Flores</option>
+                        <option data-subtext="Rep Alaska">Don Young</option>
+                        <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <button id="btnTest" class="form-control btn-primary">Obtener Valor</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+<script th:inline="javascript" th:src="@{/js/gestores/vista-principal.js}"></script>
+</body>
+</html>

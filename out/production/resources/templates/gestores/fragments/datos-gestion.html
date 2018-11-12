@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="es">
+<div th:fragment="datos-gestion">
+
+    <div class="margin-top-5pct col-md-offset-1">
+        <div class="row">
+            <div class="col-md-11">
+                <div class="col-md-1 margin-top-0-8">
+                    <label for="txtIdInterno" class="pull-right text-nowrap">Id Interno:</label>
+                </div>
+                <div class="col-md-2 no-padding-left">
+                    <input type="text" id="txtIdInterno" class="form-control">
+                </div>
+
+                <div class="col-md-1 margin-top-0-8">
+                    <label for="selectTipoId" class="pull-right text-nowrap">Tipo Id:</label>
+                </div>
+                <div class="col-md-2 no-padding-left">
+                    <select type="text" id="selectTipoId" class="form-control">
+                        <option>IFE</option>
+                    </select>
+                </div>
+                <div class="col-md-1 margin-top-0-8">
+                    <label for="txtId" class="pull-right text-nowrap">Id:</label>
+                </div>
+                <div class="col-md-2 no-padding-left">
+                    <input type="text" id="txtId" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div class="row margin-top-0-8">
+            <div class="col-md-11">
+                <div class="col-md-1 margin-top-0-8">
+                    <label for="txtnombrePersona" class="pull-right text-nowrap">Nombre
+                        Persona:</label>
+                </div>
+                <div class="col-md-5 no-padding-left">
+                    <input type="text" id="txtnombrePersona" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row margin-top-0-8">
+            <div class="col-md-11">
+                <div class="col-md-1 margin-top-0-8">
+                    <label for="txtSexo" class="pull-right text-nowrap">Sexo:</label>
+                </div>
+                <div class="col-md-2 no-padding-left">
+                    <input type="text" id="txtSexo" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row margin-top-0-8">
+            <div class="col-md-11">
+                <div class="col-md-1 margin-top-0-8">
+                    <label for="txtRazonAlta" class="pull-right text-nowrap">Razón Alta:</label>
+                </div>
+                <div class="col-md-4 no-padding-left">
+                    <input type="text" id="txtRazonAlta" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row margin-top-0-8">
+            <div class="col-md-11">
+                <div class="col-md-1 margin-top-0-8">
+                    <label for="txtFechaAlta" class="pull-right text-nowrap">Fecha Alta:</label>
+                </div>
+                <div class="col-md-3 no-padding-left">
+                    <input type="text" id="txtFechaAlta" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row margin-top-0-8">
+            <div class="col-md-11">
+                <div class="col-md-1 margin-top-0-8">
+                    <label for="txtOficina" class="pull-right text-nowrap">Oficina:</label>
+                </div>
+                <div class="col-md-3 no-padding-left">
+                    <input type="text" id="txtOficina" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row margin-top-0-8">
+            <div class="col-md-11">
+                <div class="col-md-1 margin-top-0-8">
+                    <label for="txtTipoEmpleado" class="pull-right text-nowrap">Tipo
+                        Empleado:</label>
+                </div>
+                <div class="col-md-4 no-padding-left">
+                    <input type="text" id="txtTipoEmpleado" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row margin-top-5pct">
+            <div class="col-md-11">
+                <div class="col-md-offset-1 col-md-8 no-padding-left">
+                    <fieldset class="scheduler-border z-depth-3">
+                        <legend class="scheduler-border">Datos De Gestor</legend>
+                        <div class="margin-5pct">
+                            <div class="row">
+                                <div class="col-md-2 margin-top-1-5">
+                                    <label for="txtAliasGestor" class="pull-right text-nowrap">Alias
+                                        Gestor:</label>
+                                </div>
+                                <div class="col-md-8 no-padding-left">
+                                    <input type="text" id="txtAliasGestor" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row margin-top-1-5">
+                                <div class="col-md-2 margin-top-0-8">
+                                    <label class="pull-right text-nowrap">Tipo Gestor:</label>
+                                </div>
+                                <div class="col-md-8 no-padding-left">
+                                    <div class="col-md-4 no-padding-left">
+                                        <input type="checkbox" id="checkTipoGestorInterno">
+                                        <label for="checkTipoGestorInterno">Interno</label>
+                                    </div>
+                                    <div class="col-md-4 no-padding-left">
+                                        <input type="checkbox" id="checkTipoGestorExterno">
+                                        <label for="checkTipoGestorExterno">Externo</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row margin-top-1-5">
+                                <div class="col-md-2 margin-top-1-5">
+                                    <label for="txtFechaAltaGestor"
+                                           class="pull-right text-nowrap">Fecha Alta:</label>
+                                </div>
+                                <div class="col-md-5 no-padding-left">
+                                    <input type="text" id="txtFechaAltaGestor" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row margin-top-1-5">
+                                <div class="col-md-2 margin-top-1-5">
+                                    <label for="txtEstadoGestor" class="pull-right text-nowrap">Estado:</label>
+                                </div>
+                                <div class="col-md-5 no-padding-left">
+                                    <input type="text" id="txtEstadoGestor" class="form-control">
+                                </div>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

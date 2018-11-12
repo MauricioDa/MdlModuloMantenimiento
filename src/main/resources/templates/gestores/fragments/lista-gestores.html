@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="es">
+
+<div th:fragment="lista-gestores" class="contenedor-campos col-sm-8" >
+    <div class="col-sm-10">
+        <table id="tablaGestor" class="table table-responsive table-bordered width-100 ">
+            <thead>
+            <tr>
+                <th class="col-sm-4">Nombre</th>
+                <th>Id. Oficial</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="col-sm-2 botones-accion" >
+        <div class="botones-accion"><button id="seleccionarGestor" class=" form-control btn btn-primary btn-sm">Seleccionar</button></div>
+        <div class="pt-10"><button id="anadirGestor" class=" form-control btn btn-primary btn-sm ">A&ntilde;adir</button></div>
+    </div>
+    <script th:inline="javascript">var bsfOperador=[[${BSFOPERADOR}]];</script>
+    <script th:inline="javascript" th:src="@{/js/gestores/vista-principal.js}"></script>
+
+</div>

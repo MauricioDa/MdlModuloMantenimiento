@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active:
+      development
+  config:
+    location: /src/main/resources/config
+server:
+  port: 8082
+  servlet:
+    context-path: /BsfGestores
+banner:
+  location: banner.txt
+logging:
+  config: src/main/resources/config/logback-spring.xml

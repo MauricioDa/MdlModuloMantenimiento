@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="en">
+
+
+<div th:fragment="modalSeleccionarPersona">
+
+    <div class="modal fade" role="dialog" id="modalSeleccionarPersona">
+        <div class="modal-dialog modal-lg width-85pct" role="document">
+            <form id="formModalActualizacion">
+                <div class="modal-content modal-color padding-5pct">
+                    <div class="modal-header">
+                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                        <div class="col-md-5">
+                            <h3 class="gris-b bold">Seleccionar Persona</h3>
+                        </div>
+                    </div>
+                    <!-- MODAL BODY -->
+                    <div class="modal-body">
+                        <div class="row margin-top-10">
+                            <div class="col-md-12">
+                                <div class="col-md-2 margin-top-1-5">
+                                    <label class="pull-right text-nowrap">Identificación<br> Oficial:</label>
+                                </div>
+                                <div class="col-md-4 no-padding-left" >
+                                    <input class="form-control" id="txtIdentifiacionOficial">
+                                </div>
+                                <div class="col-md-1 no-padding-left" >
+                                    <input class="form-control" id="txtIdOf">
+                                </div>
+                                <div class="col-md-3 ">
+                                    <button id="btnTest" class="form-control btn-primary">Buscar</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="row margin-top-10">
+                            <div class="col-md-12">
+                                <div class="col-md-2 margin-top-1-5">
+                                    <label class="pull-right text-nowrap">Nombre:</label>
+                                </div>
+                                <div class="col-md-8 no-padding-left" >
+                                    <input class="form-control" id="txtNombre">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-top-5pct">
+                            <div class="col-md-11">
+                                <div class="col-md-offset-1 col-md-10 no-padding-left">
+                                    <fieldset class="scheduler-border z-depth-3">
+                                        <legend class="scheduler-border">Datos De Gestor</legend>
+                                        <div class="margin-5pct">
+                                            <div class="row">
+                                                <div class="col-md-2 margin-top-0-2">
+                                                    <label for="txtIdOficial" class="pull-right text-nowrap">Identificación <br>Oficial:</label>
+                                                </div>
+                                                <div class="col-md-10 no-padding-left">
+                                                    <input type="text" id="txtIdOficial" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row margin-top-1-5">
+                                                <div class="col-md-2 margin-top-1-5">
+                                                    <label for="txtAliasGestor" class="pull-right text-nowrap">Nombre
+                                                        Gestor:</label>
+                                                </div>
+                                                <div class="col-md-10 no-padding-left">
+                                                    <input type="text" id="txtNombreGestor" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row margin-top-1-5">
+                                                <div class="col-md-2 margin-top-1-5">
+                                                    <label for="txtAliasGestor" class="pull-right text-nowrap">Alias
+                                                        Gestor:</label>
+                                                </div>
+                                                <div class="col-md-10 no-padding-left">
+                                                    <input type="text" id="txtAliasGestor" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row margin-top-1-5">
+                                                <div class="col-md-2 margin-top-0-8">
+                                                    <label class="pull-right text-nowrap">Tipo Gestor:</label>
+                                                </div>
+                                                <div class="col-md-10 no-padding-left">
+                                                    <div class="col-md-5 no-padding-left">
+                                                        <input type="checkbox" id="checkTipoGestorInterno">
+                                                        <label for="checkTipoGestorInterno">Interno</label>
+                                                    </div>
+                                                    <div class="col-md-5 no-padding-left">
+                                                        <input type="checkbox" id="checkTipoGestorExterno">
+                                                        <label for="checkTipoGestorExterno">Externo</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row margin-top-1-5">
+                                                <div class="col-md-2 margin-top-1-5">
+                                                    <label for="txtFechaAltaGestor"
+                                                           class="pull-right text-nowrap">Fecha Alta:</label>
+                                                </div>
+                                                <div class="col-md-4 no-padding-left">
+                                                    <input type="text" id="txtFechaAltaGestor" class="form-control">
+                                                </div>
+                                                <div class="col-md-2 margin-top-1-5">
+                                                    <label for="txtFechaBajaGestor"
+                                                           class="pull-right text-nowrap">Fecha Baja:</label>
+                                                </div>
+                                                <div class="col-md-4 no-padding-left">
+                                                    <input type="text" id="txtFechaBajaGestor" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row margin-top-1-5">
+                                                <div class="col-md-2 margin-top-1-5">
+                                                    <label for="txtMotivo" class="pull-right text-nowrap">Motivo:</label>
+                                                </div>
+                                                <div class="col-md-10 no-padding-left">
+                                                    <input type="text" id="txtMotivo" class="form-control">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

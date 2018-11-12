@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <th:block th:include="layout/headGlobal :: head"/>
+    <th:block th:include="layout/headDataTables :: head"/>
+    <title>Gestores</title>
+</head>
+<body>
+<div class="container_48">
+    <div class="contenedor">
+        <div class="contenedor-form">
+            <div class="titulo centrar-objeto btn-inline-set">
+                <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only"
+                        onclick="parent.regresarMenuFrecuente();" type="submit" role="button" aria-disabled="false">
+                    <span class="ui-button-icon-left ui-icon ui-c ui-icon-arrow-1-w"></span>
+                    <span class="ui-button-text ui-c">ui-button</span></button>
+                <div>
+                    <h2 class="gris-b">Gestores</h2>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-campos">
+            <div class="with-nav-tabs panel-primary margin-bottom-10pct">
+                <div class="text-center">
+                    <button class="btn-circular btn-primary btn active" href="#tab1primary" data-toggle="tab" id="btnCircle1" onclick="activeSelectedButton(this)">Datos Gestion</button>
+                    <button class="btn-circular btn-primary btn"        href="#tab2primary" data-toggle="tab" id="btnCircle2" onclick="activeSelectedButton(this)">Relación <br>de Personas</button>
+                    <button class="btn-circular btn-primary btn"        href="#tab3primary" data-toggle="tab" id="btnCircle3"onclick="activeSelectedButton(this)">Relación  <br>de Gestores</button>
+                </div>
+                <div class="panel-body">
+                    <!--Primer Tab-->
+                    <div class="tab-content">
+
+                        <div class="tab-pane fade in active" id="tab1primary">
+                            <!--Se inserta fragment a el tab 1 de la pagina inicial-->
+                            <div th:replace="gestores/fragments/datos-gestion :: datos-gestion"></div>
+
+                        </div>
+                        <!--Termina Primer Tab-->
+
+                        <!--Segundo Tab-->
+                        <div class="tab-pane fade" id="tab2primary">
+                            <div th:replace="gestores/fragments/lista-personas :: lista-personas"></div>
+
+                        </div>
+                        <!--Termina Segundo Tab-->
+
+                        <!--Tercer tab-->
+                        <div class="tab-pane fade" id="tab3primary">
+
+                            <div th:replace="gestores/fragments/lista-gestores :: lista-gestores"></div>
+                        </div>
+                        <!--Termina Tercer Tab-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<th:block th:include="gestores/fragments/seleccionar-persona :: modalSeleccionarPersona"/>
+<script th:inline="javascript" th:src="@{/js/gestores/vista-gestores.js}"></script>
+</body>
+</html>

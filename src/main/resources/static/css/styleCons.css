@@ -1,0 +1,104 @@
+.margenContenedor{
+    background-color: #F5F5F5 ;
+    border-style: outset;
+    border-color: lightgray;
+}
+.centrardiv{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3%;
+}
+.alinearEtiqueta{
+     margin-top: 7.5px;
+     font-size: 20px;
+}
+.alinearInput{
+     margin-left: 1%;
+}
+
+.btn-circle{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    margin-left: 0.5%;
+}
+.centrarBoton{
+    margin-right: 7%;
+}
+.alinearBotonDer{
+    margin-right: 6%;
+}
+.alinearBotonIzq{
+    margin-left: 8%;
+}
+
+.centrarTabla{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10%;
+}
+img{
+    height: 50px;
+}
+.margen{
+    background-color: #F5F5F5 ;
+    border-style: outset;
+    border-color: lightgray;
+}
+
+.size{
+    font-size: medium;
+    margin-left: 20px ;
+
+}
+.titulo {
+    margin-bottom: 10px;
+    position: relative; }
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px; }
+
+.centrar-objeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.btn-inline-set {
+    flex-direction: row !important; }
+
+.ui-widget {
+    font-size: 14px; }
+
+.mayus{
+    text-transform: uppercase;
+}
+
+.titulos {
+    color: #0499ca;
+    font: menu;
+    font-size: 18pt;
+}
+
+.alinearTitulos{
+    margin-top: 20%;
+}
+
+.posicionFoto{
+    margin-left: 50%;
+}
+
+.posicionDerecha{
+    margin-left: 20%;
+}
+
